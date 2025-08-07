@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/search.css"> 
+</head>
+
+<body class="body">
+    {{>navbar user=user}}
+
+    <div class="search-page">
+        <h2 class="heading">Search Food by Nutrient</h2>
+
+        <form class="search-form" action="/search" method="POST">
+            <div class="form-group">
+                <label for="nutrient">Select Nutrient:</label>
+                <select class="form-control" name="nutrient" required>
+                    <option value="sugar">Sugar</option>
+                    <option value="fat">Fat</option>
+                    <option value="cholesterol">Cholesterol</option>
+                    <option value="protein">Protein</option>
+                    <option value="calories">Calories</option>
+                    <option value="carbohydrates">Carbohydrates</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Enter Amount:</label>
+                <input class="form-control" type="number" name="amount" placeholder="Enter value like 140" required />
+            </div>
+
+            <button class="submit-btn" type="submit">Search</button>
+        </form>
+
+        <div class="history-section">
+            <h3>Search History</h3>
+            <ul class="history-list">
+                {{#each history}}
+                <li class="history-item">
+                    <span class="history-text">Nutrient: {{this.nutrient}} , amount: {{this.amount}}</span>
+                    <form action="/delete/history" method="POST" style="display:inline;">
+                        <input type="hidden" name="historyId" value="{{this.id}}" />
+                        <button class="delete-btn" type="submit">❌</button>
+                    </form>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

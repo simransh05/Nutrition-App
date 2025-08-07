@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Results</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/result.css"> 
+</head>
+
+<body class="result-body">
+    {{> navbar user=user}}
+
+    <div class="result-container">
+        <h2 class="result-heading">Results for {{nutrient}} ≤ {{amount}}</h2>
+
+        <div class="food-section">
+            <h3 class="section-title">Foods ({{nutrient}} ≤ {{amount}})</h3>
+            <ul class="food-list">
+                {{#each toPrefer}}
+                 {{!-- lookup retrieves and returns the value in that nutrient(key) each loop --}}
+                    <li class="food-item"><strong>{{name}}</strong> - {{lookup this ../nutrient}} g</li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="food-section">
+            <h3 class="section-title">Foods ({{nutrient}} > {{amount}})</h3>
+            <ul class="food-list">
+                {{#each toAvoid}}
+                    <li class="food-item"><strong>{{name}}</strong> - {{lookup this ../nutrient}} g</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

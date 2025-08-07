@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrition Result</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/resultName.css">
+</head>
+
+<body>
+    {{> navbar user=user}}
+
+    <div class="page-wrapper">
+        <div class="result-container">
+            {{#if item}}
+            <h2 class="result-heading">{{item.name}}</h2>
+            <p class="result-field"><strong>Protein:</strong> {{item.protein}} grams</p>
+            <p class="result-field"><strong>Cholesterol:</strong> {{item.cholesterol}} mg</p>
+            <p class="result-field"><strong>Sugar:</strong> {{item.sugar}} grams</p>
+            <p class="result-field"><strong>Fats:</strong> {{item.fat}} grams</p>
+            <p class="result-field"><strong>Carbohydrates:</strong> {{item.carbohydrates}} grams</p>
+            <p class="result-field"><strong>Calories:</strong> {{item.calories}} kcal</p>
+            {{else}}
+            <p class="result-message">No item found with that name.</p>
+            {{/if}}
+        </div>
+    </div>
+</body>
+
+</html>

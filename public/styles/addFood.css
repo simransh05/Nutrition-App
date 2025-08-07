@@ -1,0 +1,58 @@
+/* Make sure the body doesn't add scroll */
+.add-food-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Container that holds the form and title */
+.add-food-container {
+    max-width: 500px;
+    margin: 80px auto 20px auto; /* Push it a bit below the navbar */
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the form */
+.add-food-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form element */
+.add-food-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.add-food-input {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+.add-food-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-food-btn:hover {
+    background-color: #45a049;
+}

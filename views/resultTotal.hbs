@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/totalResult.css">
+</head>
+
+<body class="body">
+    {{>navbar user=user}}
+
+    <div class="result-page">
+        <div class="container">
+            <h2 class="heading">Result for Data</h2>
+            <p class="result"><strong>Protein:</strong> {{total.protein}} grams</p>
+            <p class="result"><strong>Cholesterol:</strong> {{total.cholesterol}} mg</p>
+            <p class="result"><strong>Sugar:</strong> {{total.sugar}} grams</p>
+            <p class="result"><strong>Fats:</strong> {{total.fat}} grams</p>
+            <p class="result"><strong>Carbohydrates:</strong> {{total.carbohydrates}} grams</p>
+            <p class="result"><strong>Calories:</strong> {{total.calories}} kcal</p>
+        </div>
+    </div>
+</body>
+
+
+</html>

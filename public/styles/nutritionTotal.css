@@ -1,0 +1,106 @@
+/* Grey background */
+.pageBody {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* White content box */
+.containerBox {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Headings */
+.Heading {
+    text-align: center;
+    color: #333;
+}
+
+/* Form area */
+.formBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.inputBox li {
+    list-style: none;
+}
+
+.inputBox input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    align-items: center;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* History items */
+.historyList {
+    margin-top: 20px;
+}
+
+.historyItem {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* History section */
+.historyList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.historyItem {
+    background-color: #fff;
+    padding: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.historyItem strong {
+    margin-right: 10px;
+}
+
+/* Ensure delete button stays at the right */
+.historyItem form {
+    margin-left: auto;
+}
+
+.historyItem button {
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}

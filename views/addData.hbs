@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/addFood.css"> 
+</head>
+
+<body class="add-food-body">
+    {{>navbar user=user}}
+
+    <div class="add-food-container">
+        <h2 class="add-food-title">Add New Food Item</h2>
+
+        <form action="/admin/add" method="POST" class="add-food-form">
+            <label for="name">Food Name:</label>
+            <input type="text" name="name" placeholder="e.g., Curd (100g)" required class="add-food-input" /><br><br>
+
+            <label for="fat">Fat (g):</label>
+            <input type="number" name="fat" step="0.1" placeholder="e.g., 3.4" required class="add-food-input" /><br><br>
+
+            <label for="cholesterol">Cholesterol (mg):</label>
+            <input type="number" name="cholesterol" placeholder="e.g., 15" required class="add-food-input" /><br><br>
+
+            <label for="sugar">Sugar (g):</label>
+            <input type="number" name="sugar" step="0.1" placeholder="e.g., 4.7" required class="add-food-input" /><br><br>
+
+            <label for="protein">Protein (g):</label>
+            <input type="number" name="protein" step="0.1" placeholder="e.g., 11" required class="add-food-input" /><br><br>
+
+            <label for="calories">Calories (kcal):</label>
+            <input type="number" name="calories" placeholder="e.g., 98" required class="add-food-input" /><br><br>
+
+            <label for="carbohydrates">carbohydrates (g):</label>
+            <input type="number" name="carbohydrates" step="0.1" placeholder="e.g., 11" required class="add-food-input" /><br><br>
+
+            <button type="submit" class="add-food-btn">Add Food Item</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<div class="container">
+    <nav class="navbar">
+        <div class="navItem">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXUJerj8k5De1N5WARlv9A3lXBwpgEB1gQw&s"
+                alt="LESS Logo" width="100px" height="100px">
+        </div>
+        <div class="navItem">
+            <a class="navLink" href="/profile">Home</a>
+            <a class="navLink" href="/search">Search By Nutrition </a>
+            <a class="navLink" href="/searchName">Search By Food Name</a>
+            <a class="navLink" href="/findTotal">Total Nutrition</a>
+            {{#if user.isadmin}}
+            <a class="navLink" href="/admin/add">Admin-Add</a>
+            {{/if}}
+        </div>
+
+        <div class="navItem">
+            <span class="user-name">{{user.username}}</span>
+            <a class="logout" href="/logout">Logout</a>
+        </div>
+    </nav>
+</div>

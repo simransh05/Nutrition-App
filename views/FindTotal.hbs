@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/nutritionTotal.css"> 
+</head>
+
+<body class="pageBody">
+    {{>navbar user=user}}
+
+    <div class="containerBox">
+        <h2 class="Heading">Total Nutrition</h2>
+
+        <form action="/findTotal" method="post" class="formBox">
+            <ul class="inputBox">
+                <li>
+                    <input type="text" placeholder="Enter Item" name="name" required>
+                </li>
+            </ul>
+
+            <button class="addText">Add</button>
+            <button type="submit">Show Total</button>
+        </form>
+
+        <h3 class="Heading">Search History</h3>
+        <div class="historyList">
+            {{#each history2}}
+                <div class="historyItem">
+                    <strong>Foods:</strong>
+                    {{#each foodNames}}{{this}} {{/each}}
+                    <form action="/delete/Find" method="POST" style="display:inline;">
+                        <input type="hidden" name="historyId" value="{{id}}" />
+                        <button type="submit">❌</button><br>
+                    </form>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <script src="/JavaScript/script.js"></script>
+</body>
+
+</html>

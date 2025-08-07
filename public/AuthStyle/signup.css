@@ -1,0 +1,99 @@
+.signupBody {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.inputField {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Unified Button Style */
+button, .signupBtn, .loginBtn, .btnAuth {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Specific Background Colors */
+.signupBtn {
+    background-color: #4CAF50;
+    margin-bottom: 8px;
+}
+
+.signupBtn:hover {
+    background-color: #45a049;
+}
+
+.loginBtn {
+    background-color: #2196F3;
+    margin-top: 10px;
+    margin: 10px auto 0; /* centers horizontally and gives top margin */
+    display: block; 
+}
+
+.loginBtn:hover {
+    background-color: #0b7dda;
+}
+
+.loginBtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.auth {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btnAuth {
+    background-color: #4CAF50;
+    margin-top: 10px;
+}
+
+.btnAuth:hover {
+    background-color: #45a049;
+}
+
+.btnAuth a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+.account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.accountText {
+    font-size: 15px;
+    margin-bottom: 8px;
+    text-align: center;
+}

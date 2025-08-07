@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Nutrition App</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/profile.css">
+</head>
+
+<body>
+    {{>navbar user=user}}
+
+    <div class="profile-container">
+        <div class="user-info">
+            <h2>Welcome, {{user.username}} 👋</h2>
+            <p>This is your personalized nutrition dashboard.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>🧪 Search by Nutrient</h3>
+            <p>Input a nutrient and amount (e.g., <strong>protein 10</strong>) to find foods with:</p>
+            <ul>
+                <li>✅ Nutrient less than your input</li>
+                <li>🚀 Nutrient greater than your input</li>
+            </ul>
+            <a href="/search">Explore by Nutrient</a>
+        </div>
+
+        <div class="feature-box">
+            <h3>🔍 Search by Food Name</h3>
+            <p>Type a food item like <strong>"Apple"</strong> to get its nutrition info including protein, fat, sugar, etc.</p>
+            <a href="/searchName">Go to Search</a>
+        </div>
+
+        <div class="feature-box">
+            <h3>📅 Daily Nutrition Tracker</h3>
+            <p>Enter foods you’ve eaten today and get your total intake of proteins, fats, sugar, and carbs.</p>
+            <a href="/findTotal">Track Today's Nutrition</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+/* login.css */
+
+body.loginBody {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginContainer {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Reduced gap */
+}
+
+.loginInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Common button styles */
+.loginBtn,
+.btnAuth,
+.signupBtn {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Login button */
+.loginBtn {
+    background-color: #27ae60;
+}
+.loginBtn:hover {
+    background-color: #219150;
+}
+
+/* Google Auth button */
+.btnAuth {
+    background-color: #27ae60; /* Google Red */
+    margin-top: 15px;
+}
+.btnAuth:hover {
+    background-color: #219150;
+}
+
+/* Signup button */
+.signupBtn {
+    background-color: #2e86de;
+}
+.signupBtn:hover {
+    background-color: #1e70c1;
+}
+
+.auth,
+.account {
+    margin-top: 15px;
+}
+
+/* Link styles inside buttons */
+.btnAuth a,
+.signupBtn a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.accountText {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #555;
+}
