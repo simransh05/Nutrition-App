@@ -4,8 +4,8 @@ A full-stack web application to track and analyze your daily nutrient intake wit
 
 ## Features
 1. **Nutrient Filtering** – Enter a nutrient name and amount, then filter food items based on:
-   - Less than and equal to
-   - Greater than the given amount
+   - Less than and equal to, and
+   - Greater than the given nutrient amount
 2. **Food Item Lookup** – Enter the name of a food item to view all its nutritional details (fat, sugar, protein, carbs, calories, cholesterol, etc.).
 3. **Daily Intake Summary** – Select the day and the items eaten; the app calculates the total of all nutrient fields for that day and shows the result.
 4. **Authentication** – Secure login/signup system with password hashing and Google OAuth login.
