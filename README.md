@@ -34,7 +34,7 @@ npm install
 Create a file named .env in the root folder and add the following values:
 ```env
 MONGO_URL=your_mongodb_url
-CLIENT_ID =your_client_id
+CLIENT_ID=your_client_id
 CLIENT_SECRET=your_client_secret
 REDIRECT_URI=redirect_uri
 ```
@@ -43,3 +43,4 @@ REDIRECT_URI=redirect_uri
 ```bash
 node app.js
 ```
+Then open http://localhost:4000 in your browser.
