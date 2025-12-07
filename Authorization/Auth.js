@@ -43,7 +43,8 @@ passport.use(new GoogleStrategy({
             user = await User.create({
                 googleaccessToken: accessToken,
                 googleId: profile.id,
-                username: profile.displayName
+                username: profile.displayName,
+                isadmin: false
             })
             return cb(null, user);
         }
